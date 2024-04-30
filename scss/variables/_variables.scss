@@ -1,6 +1,10 @@
 // DEFAULT FONT SIZE
 
 $base-font-size: 10px;
+$heading1-font-size: 6.4rem;
+$heading2-font-size: 5.6rem;
+$heading3-font-size: 4.8rem;
+$heading4-font-size: 2.4rem;
 
 // HTML
 
@@ -24,8 +28,8 @@ body {
 // COLORS
 
 $black: #000000;
-$white: #000000;
-$orange: #f8ba3b;
+$white: #fff;
+$orange100: #f8ba3b;
 $orange75: #f8ba3b80;
 $orange50: #fdeac4;
 $orange25: #fef8eb;

@@ -11,3 +11,105 @@
 // FONTS
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+// ANIMATIONS
+@import "../scss/animations/animations";
+// SECTION COURSE
+
+.course {
+  position: relative;
+  padding-bottom: 10rem;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 32rem;
+      height: 32rem;
+      border-radius: 32rem;
+      background: $orange50;
+      filter: blur(30rem);
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  &_subscribe {
+    width: 425px;
+    &-title {
+      @include font_robotomono;
+      padding-bottom: 3.2rem;
+      &--span {
+        @include font_montserrat-heading;
+        background-color: $brick;
+        margin-bottom: 0.8rem;
+      }
+    }
+    &-content {
+      &--text {
+        @include font_montserrat-paragraph;
+        padding-bottom: 3.2rem;
+      }
+      &--first {
+        @include font_montserrat-paragraph;
+        color: $smoke;
+        padding-bottom: 4.8rem;
+      }
+    }
+    &-btn {
+      @include font_montserrat-btn;
+      color: $white;
+      border-radius: 1.8rem;
+      border: 0.1rem solid $black;
+      padding: 2.4rem 3.2rem;
+      background: $black;
+      cursor: pointer;
+    }
+  }
+  &_bg {
+    width: 745px;
+    height: 650px;
+    background-image: url("/img/course-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// DIV MARQUEE
+
+.marquee {
+  &_dir {
+    &-left {
+      border: 0.1rem solid red;
+
+      @include font_montserrat-paragraph--title;
+
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      padding: 1.6rem 0rem;
+
+      background-color: $brick;
+      transform: rotate(3deg);
+      width: 100%;
+      animation: marquee-text 15s linear infinite;
+      overflow: hidden;
+    }
+    &-right {
+      border: 0.1rem solid red;
+
+      display: flex;
+      gap: 3.2rem;
+
+      background-color: $orange100;
+      transform: rotate(-3deg);
+
+      width: 100%;
+      animation: marquee-text 15s linear infinite;
+      overflow: hidden;
+    }
+  }
+}

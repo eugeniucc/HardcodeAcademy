@@ -4,17 +4,44 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin font_montserrat-heading {
+  color: $white;
+  font-family: Montserrat;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+}
+@mixin font_montserrat-paragraph--title {
+  color: $black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
 @mixin font_montserrat-paragraph {
-  color: #100f0f;
+  color: $black;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 2.4rem;
 }
+@mixin font_montserrat-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 @mixin font_robotomono {
   font-family: "Roboto Mono", monospace;
-  color: #100f0f;
+  color: $black;
   font-size: 6.4rem;
   font-style: normal;
   font-weight: 700;
