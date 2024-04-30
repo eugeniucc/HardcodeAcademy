@@ -2,13 +2,12 @@
 @import "../components/header";
 
 // MIXINS
+@import "../scss/mixins/mixins";
 
-@import "../scss/mixins/_mixins.sass";
+// VARIABLES
+
+@import "../scss/variables/variables";
 
 // FONTS
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
-
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");

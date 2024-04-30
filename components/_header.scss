@@ -1,0 +1,53 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.header {
+  padding: 3.2rem 0rem 14rem 0rem;
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-menu {
+      width: 76.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--logo {
+        width: 6.4rem;
+        height: 6.4rem;
+        background-image: url(../../icons/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &--urls {
+        display: flex;
+        gap: 3.2rem;
+      }
+      &--links {
+        @include font_montserrat-paragraph;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+    &-contacts {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      @include font_montserrat-paragraph;
+      &--phone {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1.6rem 3.2rem;
+        border-radius: 1.8rem;
+        border: 1px solid #100f0f;
+        cursor: pointer;
+      }
+      &--language {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
