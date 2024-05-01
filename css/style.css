@@ -195,6 +195,20 @@
   background-color: #fff;
   text-align: center;
 }
+.whyus_wrapper-card:hover {
+  background-color: #f8ba3b;
+  transition: 1s ease;
+  color: #fff;
+}
+.whyus_wrapper-card:hover .whyus_wrapper-card--img svg circle {
+  fill: #fff;
+}
+.whyus_wrapper-card:hover .whyus_wrapper-card--text {
+  color: #fff;
+}
+.whyus_wrapper-card:hover .whyus_wrapper-card--title {
+  color: #fff;
+}
 .whyus_wrapper-card--img {
   width: 10rem;
   height: 10rem;
@@ -353,6 +367,61 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  padding: 6.4rem 0rem 5.6rem 0rem;
+  background-image: url(/icons/teacher-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10.4rem;
+}
+.teacher_wrapper-card {
+  padding: 3.2rem 3.4rem 4.6rem 3.4rem;
+  max-width: 35.2rem;
+  border-radius: 3.2rem;
+  border: 1px solid #f8ba3b;
+  background: #fff;
+  margin: 0 auto;
+}
+.teacher_wrapper-card--title {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.teacher_wrapper-card--text-p {
+  padding: 1.6rem 0rem 3.2rem 0rem;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+}
+.teacher_wrapper-card--text {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+}
+.teacher_wrapper-card--content {
+  text-align: center;
+}
+.teacher_wrapper-card--img {
+  display: block;
+  padding-bottom: 3.2rem;
+  margin: 0 auto;
+}
+
+.reviews {
+  padding: 12.8rem 0rem;
 }
 
 html {

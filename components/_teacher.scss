@@ -9,5 +9,40 @@
   &_title {
     text-align: center;
     @include font_montserrat-heading--title;
+    padding: 6.4rem 0rem 5.6rem 0rem;
+    background-image: url(/icons/teacher-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10.4rem;
+  }
+  &_wrapper {
+    &-card {
+      padding: 3.2rem 3.4rem 4.6rem 3.4rem;
+      max-width: 35.2rem;
+      border-radius: 3.2rem;
+      border: 1px solid $orange100;
+      background: $white;
+      margin: 0 auto;
+      &--title {
+        @include font_montserrat-card;
+        font-size: 2.4rem;
+        font-weight: 500;
+      }
+      &--text-p {
+        padding: 1.6rem 0rem 3.2rem 0rem;
+        @include font_montserrat-card;
+      }
+      &--text {
+        @include font_montserrat-card;
+      }
+      &--content {
+        text-align: center;
+      }
+      &--img {
+        display: block;
+        padding-bottom: 3.2rem;
+        margin: 0 auto;
+      }
+    }
   }
 }

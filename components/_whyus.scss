@@ -27,6 +27,24 @@
       border-radius: 3.2rem;
       background-color: $white;
       text-align: center;
+      &:hover {
+        background-color: $orange100;
+        transition: 1s ease;
+        color: $white;
+        .whyus_wrapper-card--img {
+          svg {
+            circle {
+              fill: $white;
+            }
+          }
+        }
+        .whyus_wrapper-card--text {
+          color: $white;
+        }
+        .whyus_wrapper-card--title {
+          color: $white;
+        }
+      }
       &--img {
         width: 10rem;
         height: 10rem;
