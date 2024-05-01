@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.container {
-  max-width: 132rem;
-  margin: 0 auto;
-}
-
 .header {
   padding: 3.2rem 0rem 14rem 0rem;
   position: relative;
@@ -90,30 +74,6 @@ body {
   cursor: pointer;
 }
 
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.container {
-  max-width: 132rem;
-  margin: 0 auto;
-}
-
-@keyframes marquee-text {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 .course {
   position: relative;
   padding-bottom: 10rem;
@@ -158,6 +118,8 @@ body {
   text-transform: uppercase;
   background-color: #f96739;
   margin-bottom: 0.8rem;
+  display: block;
+  max-width: 16rem;
 }
 .course_subscribe-content--text {
   color: #000000;
@@ -200,8 +162,45 @@ body {
   background-position: center;
 }
 
-.marquee_dir-left {
-  border: 0.1rem solid red;
+.whyus {
+  padding: 10rem 0rem 6.4rem 0rem;
+  background-color: #fef8eb;
+}
+.whyus_title {
+  padding-bottom: 5.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+.whyus_title-span {
+  background-image: url("/icons/whyus-title-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+.whyus_wrapper {
+  display: flex;
+  gap: 2.4rem;
+}
+.whyus_wrapper-card {
+  width: calc(33.33% - 2.4rem);
+  padding: 5.3rem 5.6rem;
+  border-radius: 3.2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.whyus_wrapper-card--img {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+.whyus_wrapper-card--title {
   color: #000000;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -210,23 +209,164 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  margin: 1.6rem 0rem 2.4rem 0rem;
+}
+.whyus_wrapper-card--text {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.forwho {
+  padding: 8.5rem 0rem 15rem 0rem;
+}
+.forwho_wrapper {
+  display: flex;
+  gap: 0.3rem;
+}
+.forwho_bg {
+  width: calc(50% - 0.3rem);
+}
+.forwho_bg-img {
+  display: block;
+  width: 100%;
+}
+.forwho_content {
+  width: calc(50% - 0.3rem);
+}
+.forwho_content-title {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 6rem;
+  position: relative;
+}
+.forwho_content-title::after {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-image: url("/icons/forwho-title--img.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+  top: -3rem;
+  right: -4.5rem;
+}
+.forwho_content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.forwho_content-wrapper--title {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: start;
   display: flex;
   align-items: center;
-  gap: 2.4rem;
-  padding: 1.6rem 0rem;
-  background-color: #f96739;
-  transform: rotate(3deg);
-  width: 100%;
-  animation: marquee-text 15s linear infinite;
-  overflow: hidden;
+  gap: 0.8rem;
 }
-.marquee_dir-right {
-  border: 0.1rem solid red;
+.forwho_content-wrapper--text {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.accordion {
+  padding-bottom: 12.8rem;
+}
+.accordion_title {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 5.6rem;
+}
+.accordion_wrapper {
   display: flex;
-  gap: 3.2rem;
-  background-color: #f8ba3b;
-  transform: rotate(-3deg);
-  width: 100%;
-  animation: marquee-text 15s linear infinite;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.accordion_wrapper-card {
+  background-color: #fef8eb;
+  border-radius: 3.2rem;
+  padding: 4rem 0rem 4.5rem 4rem;
+}
+.accordion_wrapper-item--btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  border: none;
+  background: transparent;
+  padding-bottom: 1.8rem;
+}
+.accordion_wrapper-item--title {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.accordion_wrapper-content {
+  padding-left: 6.8rem;
+}
+.accordion_wrapper-content--list {
+  list-style: disc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.teacher {
+  background-color: #fef8eb;
+  padding-bottom: 12.8rem;
+}
+.teacher_title {
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION WHYUS
+
+.whyus {
+  padding: 10rem 0rem 6.4rem 0rem;
+  background-color: $orange25;
+  &_title {
+    padding-bottom: 5.5rem;
+    text-align: center;
+    @include font_montserrat-heading;
+    color: $black;
+    &-span {
+      background-image: url("/icons/whyus-title-bg.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+    }
+  }
+  &_wrapper {
+    display: flex;
+    gap: 2.4rem;
+    &-card {
+      width: calc(33.33% - 2.4rem);
+      padding: 5.3rem 5.6rem;
+      border-radius: 3.2rem;
+      background-color: $white;
+      text-align: center;
+      &--img {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+      }
+      &--title {
+        @include font_montserrat-paragraph--title;
+        margin: 1.6rem 0rem 2.4rem 0rem;
+      }
+      &--text {
+        @include font_montserrat-paragraph;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION ACCORDION
+
+.accordion {
+  padding-bottom: 12.8rem;
+  &_title {
+    @include font_montserrat-heading--title;
+    padding-bottom: 5.6rem;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    &-card {
+      background-color: $orange25;
+      border-radius: 3.2rem;
+      padding: 4rem 0rem 4.5rem 4rem;
+    }
+    &-item {
+      &--btn {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        border: none;
+        background: transparent;
+        padding-bottom: 1.8rem;
+      }
+      &--title {
+        @include font_montserrat-paragraph--title;
+      }
+    }
+    &-content {
+      padding-left: 6.8rem;
+      &--list {
+        list-style: disc;
+        @include font_montserrat-btn;
+      }
+    }
+  }
+}

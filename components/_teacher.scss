@@ -1,0 +1,13 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION TEACHER
+
+.teacher {
+  background-color: $orange25;
+  padding-bottom: 12.8rem;
+  &_title {
+    text-align: center;
+    @include font_montserrat-heading--title;
+  }
+}

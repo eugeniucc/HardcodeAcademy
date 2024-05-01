@@ -1,0 +1,53 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION FORWHO
+
+.forwho {
+  padding: 8.5rem 0rem 15rem 0rem;
+  &_wrapper {
+    display: flex;
+    gap: 0.3rem;
+  }
+  &_bg {
+    width: calc(50% - 0.3rem);
+    &-img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &_content {
+    width: calc(50% - 0.3rem);
+    &-title {
+      @include font_montserrat-heading--title;
+      padding-bottom: 6rem;
+      position: relative;
+      &::after {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        background-image: url("/icons/forwho-title--img.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        content: "";
+        top: -3rem;
+        right: -4.5rem;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      &--title {
+        @include font_montserrat-paragraph--title;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+      &--text {
+        @include font_montserrat-paragraph;
+      }
+    }
+  }
+}
