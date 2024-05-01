@@ -600,12 +600,192 @@
     <section class="reviews">
       <div class="container">
         <div class="reviews_wrapper">
-          <div class="reviews_wrapper-img"></div>
+          <div class="reviews_wrapper-bg">
+            <img
+              class="reviews_wrapper-bg--img"
+              src="./img/reviews-img.png"
+              alt="#"
+            />
+          </div>
           <div class="reviews_wrapper-content">
-            <div class="reviews_wrapper-content--title"></div>
+            <h3 class="reviews_wrapper-content--title">
+              Отзывы наших учеников
+            </h3>
+            <div class="reviews_wrapper-content--wrapper">
+              <p class="reviews_wrapper-content--text">
+                Курс Frontend Developer был очень полезным и информативным. Я
+                получил фундаментальные знания о HTML, CSS и JavaScript, а также
+                научился использовать различные фреймворки и инструменты
+                разработки. Преподаватели были опытными и предлагали интересные
+                практические задания, что помогло мне применить полученные
+                знания на практике.
+              </p>
+              <div class="reviews_pages">
+                <p class="reviews_pages-title">Владислав</p>
+                <div class="reviews_pages-wrapper">
+                  <button class="reviews_pages-left">
+                    <img
+                      class="reviews_pages-left--img"
+                      src="./icons/btn-left.svg"
+                      alt="#"
+                    />
+                  </button>
+                  <span class="reviews_pages-number">1/4</span>
+                  <button class="reviews_pages-right">
+                    <img
+                      class="reviews_pages-right--img"
+                      src="./icons/btn-right.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="lesson">
+      <div class="container">
+        <h2 class="lesson_title">записаться на первый урок</h2>
+        <div class="lesson_wrapper">
+          <div class="lesson_wrapper-content">
+            <p class="lesson_wrapper-content--text">Первый урок бесплатно!</p>
+            <div class="lesson_wrapper-item">
+              <p class="lesson_wrapper-item--text">Имя*</p>
+              <input
+                class="lesson_wrapper-item--input"
+                type="text"
+                placeholder="Введите своё имя"
+              />
+            </div>
+            <div class="lesson_wrapper-item">
+              <p class="lesson_wrapper-item--text">Номер телефона*</p>
+              <input
+                class="lesson_wrapper-item--input"
+                type="text"
+                placeholder="Введите Ваш номер телефона"
+              />
+            </div>
+            <div class="lesson_wrapper-item">
+              <p class="lesson_wrapper-item--text">Email*</p>
+              <input
+                class="lesson_wrapper-item--input"
+                type="text"
+                placeholder="Введите Ваш Email"
+              />
+            </div>
+            <button class="lesson_wrapper-btn">Оставить заявку</button>
+          </div>
+          <div class="lesson_wrapper-bg">
+            <img
+              class="lesson_wrapper-bg--img"
+              src="./img/lesson-img.png"
+              alt="#"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_wrapper-card">
+            <img
+              class="footer_wrapper-card--img"
+              src="./icons/footer-img.png"
+              alt="#"
+            />
+            <p class="footer_wrapper--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              auctor augue massa, ut ultricies tortor accumsan nec. Praesent in
+              facilisis turpis.
+            </p>
+          </div>
+          <div class="footer_wrapper-card">
+            <h3 class="footer_wrapper-card--title">Социальные сети</h3>
+            <div class="footer_wrapper-social">
+              <a class="footer_wrapper-social--links" href="#" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 2H16C19.3137 2 22 4.68629 22 8V16C22 19.3137 19.3137 22 16 22H8C4.68629 22 2 19.3137 2 16V8C2 4.68629 4.68629 2 8 2ZM8 4C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8ZM12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15ZM17 8C16.4477 8 16 7.55228 16 7C16 6.44772 16.4477 6 17 6C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8Z"
+                    fill="#100F0F"
+                  />
+                </svg>
+              </a>
+              <a class="footer_wrapper-social--links" href="#" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 5.80021C21.2483 6.1263 20.4534 6.34187 19.64 6.44021C20.4982 5.92753 21.1413 5.12099 21.45 4.17021C20.6436 4.65027 19.7608 4.98851 18.84 5.17021C18.2245 4.50278 17.405 4.05851 16.5098 3.90706C15.6147 3.75562 14.6945 3.90557 13.8938 4.3334C13.093 4.76123 12.4569 5.44274 12.0852 6.27105C11.7135 7.09935 11.6273 8.0276 11.84 8.91021C10.2094 8.82774 8.61444 8.40316 7.15865 7.66407C5.70287 6.92498 4.41885 5.8879 3.39 4.62021C3.02914 5.25038 2.83952 5.96403 2.84 6.69021C2.83872 7.36459 3.00422 8.02883 3.32176 8.62377C3.63929 9.21872 4.09902 9.72592 4.66 10.1002C4.00798 10.0825 3.36989 9.90751 2.8 9.59021V9.64021C2.80489 10.5851 3.13599 11.4993 3.73731 12.2282C4.33864 12.957 5.17326 13.4559 6.1 13.6402C5.74326 13.7488 5.37287 13.806 5 13.8102C4.74189 13.8072 4.48442 13.7838 4.23 13.7402C4.49391 14.553 5.00462 15.2634 5.69107 15.7724C6.37753 16.2814 7.20558 16.5638 8.06 16.5802C6.6172 17.7155 4.83588 18.3351 3 18.3402C2.66574 18.3413 2.33174 18.3213 2 18.2802C3.87443 19.4905 6.05881 20.1329 8.29 20.1302C9.82969 20.1462 11.3571 19.8552 12.7831 19.2743C14.2091 18.6934 15.505 17.8341 16.5952 16.7467C17.6854 15.6593 18.548 14.3656 19.1326 12.9411C19.7172 11.5166 20.012 9.98994 20 8.45021C20 8.28021 20 8.10021 20 7.92021C20.7847 7.33502 21.4615 6.61763 22 5.80021Z"
+                    fill="#100F0F"
+                  />
+                </svg>
+              </a>
+              <a class="footer_wrapper-social--links" href="#" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1204 5.32003H17.0004V2.14003C16.0901 2.04538 15.1755 1.99865 14.2604 2.00003C11.5404 2.00003 9.68035 3.66003 9.68035 6.70003V9.32003H6.61035V12.88H9.68035V22H13.3604V12.88H16.4204L16.8804 9.32003H13.3604V7.05003C13.3604 6.00003 13.6404 5.32003 15.1204 5.32003Z"
+                    fill="#100F0F"
+                  />
+                </svg>
+              </a>
+              <a class="footer_wrapper-social--links" href="#" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47668 21H2.33028V7.64732H6.47668V21ZM4.40125 5.82589C3.07565 5.82589 2 4.72768 2 3.40179C2 2.07589 3.07565 1 4.40125 1C5.72685 1 6.8025 2.07589 6.8025 3.40179C6.8025 4.72768 5.72685 5.82589 4.40125 5.82589ZM21.9955 21H17.8581V14.5C17.8581 12.9509 17.8268 10.9643 15.7023 10.9643C13.5465 10.9643 13.2162 12.6473 13.2162 14.3884V21H9.07431V7.64732H13.0511V9.46875H13.1091C13.6626 8.41964 15.015 7.3125 17.0324 7.3125C21.2278 7.3125 22 10.0759 22 13.6652V21H21.9955Z"
+                    fill="#100F0F"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer_wrapper-card">
+            <div class="footer_wrapper-contacts">
+              <h3 class="footer_wrapper-contacts--title">Контакты</h3>
+              <a class="footer_wrapper-contacts--phone" href="tel:+380631457898"
+                >+38 063 145 78 98</a
+              >
+              <a
+                class="footer_wrapper-contacts--mail"
+                href="mailto:info@hardcode.com"
+                >info@hardcode.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer_copyrights">
+          <a class="footer_copyrights-link" href="#" target="_blank"
+            >Политика конфиденциальности</a
+          >
+          <span class="footer_copyrights-logo">Hardcode™ ​© 2023</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

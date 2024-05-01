@@ -1,0 +1,81 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION LESSON
+
+.lesson {
+  background-color: $orange25;
+  padding: 6.4rem 0rem;
+  &_title {
+    @include font_montserrat-heading--title;
+    padding-bottom: 4.8rem;
+    max-width: 840px;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(/icons/forwho-title--img.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 4.8rem;
+      height: 4.8rem;
+      top: -3rem;
+      right: -4rem;
+    }
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      width: 48rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      &--text {
+        @include font_montserrat-btn;
+        font-weight: 400;
+        color: $smoke;
+        padding-bottom: 0.8rem;
+      }
+    }
+    &-item {
+      width: 100%;
+      &--text {
+        @include font_montserrat-paragraph;
+        line-height: 2rem;
+        padding-bottom: 0.8rem;
+      }
+      &--input {
+        @include font_montserrat-paragraph;
+        line-height: 2rem;
+        color: $smoke;
+        width: calc(100% - 1.6rem);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding: 1.4rem 0rem 1.4rem 1.6rem;
+        &::placeholder {
+          opacity: 0.7;
+          color: $smoke;
+        }
+      }
+    }
+    &-btn {
+      @include font_montserrat-paragraph;
+      color: $white;
+      font-weight: 600;
+      background-color: $brick;
+      border: none;
+      border-radius: 3.2rem;
+      padding: 1.2rem 15rem;
+      text-wrap: nowrap;
+      cursor: pointer;
+    }
+    &-bg {
+      &--img {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// SECTION FOOTER
+
+.footer {
+  padding: 6.4rem 0rem 2.4rem 0rem;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    &--text {
+      @include font_montserrat-paragraph;
+      font-size: 1.4rem;
+      line-height: normal;
+    }
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      &--title,
+      &--phone,
+      &--mail {
+        @include font_montserrat-btn;
+        font-weight: 400;
+        text-decoration: none;
+        color: $black;
+      }
+    }
+    &-social {
+      display: flex;
+      gap: 2.4rem;
+    }
+    &-card {
+      max-width: 33.5rem;
+      &--title {
+        @include font_montserrat-btn;
+        font-weight: 400;
+        padding-bottom: 1.6rem;
+      }
+      &--img {
+        display: block;
+        padding-bottom: 1.6rem;
+      }
+    }
+  }
+  &_copyrights {
+    padding-top: 6.4rem;
+    display: flex;
+    &-logo,
+    &-link {
+      @include font_montserrat-paragraph;
+      font-size: 1.4rem;
+      line-height: normal;
+      width: 100%;
+    }
+    &-link {
+      text-decoration: none;
+    }
+    &-logo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

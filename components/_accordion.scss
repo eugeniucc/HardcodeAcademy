@@ -26,6 +26,7 @@
         border: none;
         background: transparent;
         padding-bottom: 1.8rem;
+        cursor: pointer;
       }
       &--title {
         @include font_montserrat-paragraph--title;
