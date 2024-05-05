@@ -1,0 +1,28 @@
+@import "../components/header";
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media only screen and (max-width: #{$breakpoint-xxl}) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    background: green;
+  }
+}
+
+@media only screen and (max-width: 140rem) {
+  .header {
+    height: 1000px;
+  }
+}
+@media (max-width: 1400px) {
+  .header {
+    height: 1000px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .header {
+    background: green;
+    height: 1000px;
+  }
+}

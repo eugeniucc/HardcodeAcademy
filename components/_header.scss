@@ -4,6 +4,9 @@
 .header {
   padding: 3.2rem 0rem 14rem 0rem;
   position: relative;
+  @media (max-width: 1400px) {
+    height: 1000px;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -16,6 +19,7 @@
     right: 0;
     z-index: -1;
   }
+
   &_nav {
     display: flex;
     justify-content: space-between;
