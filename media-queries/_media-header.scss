@@ -1,28 +1,75 @@
-@import "../components/header";
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media only screen and (max-width: #{$breakpoint-xxl}) {
+@media (max-width: $breakpoint-xl) {
   .header {
-    display: flex;
-    flex-direction: column;
-    background: green;
+    &_nav {
+      padding: 0rem 2rem;
+    }
   }
 }
-
-@media only screen and (max-width: 140rem) {
+@media (max-width: $breakpoint-lg) {
   .header {
-    height: 1000px;
+    padding: 3.2rem 0rem 3.2rem 0rem;
+    &_nav {
+      padding: 0rem 2rem;
+      &-menu {
+        width: 62.8rem;
+      }
+    }
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: $breakpoint-md) {
   .header {
-    height: 1000px;
+    &_nav {
+      &-menu {
+        width: 41rem;
+        &--logo {
+          display: none;
+        }
+        &--urls {
+          gap: 1.4rem;
+        }
+      }
+    }
   }
 }
-@media (max-width: 1399.98px) {
+@media (max-width: $breakpoint-smL) {
   .header {
-    background: green;
-    height: 1000px;
+    &_nav {
+      flex-direction: column;
+      gap: 2.4rem;
+      &-contacts {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .header {
+    &_nav {
+      &-menu {
+        width: 100%;
+        &--urls {
+          flex-wrap: wrap;
+          gap: 3.4rem;
+        }
+      }
+      &-contacts {
+        justify-content: unset;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .header {
+    &_nav {
+      &-contacts {
+        &--phone {
+          padding: 1.5rem 1.5rem;
+        }
+      }
+    }
   }
 }

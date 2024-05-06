@@ -1,0 +1,36 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .footer {
+    &_wrapper {
+      padding: 0rem 2rem;
+    }
+    &_copyrights {
+      padding-left: 2rem;
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .footer {
+    padding: 3.5rem 0rem;
+    &_wrapper {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+    &_copyrights {
+      padding-top: 3.4rem;
+      &-logo {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .footer {
+    &_copyrights {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+}

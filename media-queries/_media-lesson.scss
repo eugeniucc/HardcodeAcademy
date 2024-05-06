@@ -1,0 +1,92 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .lesson {
+    &_wrapper {
+      padding: 0rem 2rem;
+    }
+  }
+}
+@media (max-width: $breakpoint-lg) {
+  .lesson {
+    &_wrapper {
+      align-items: center;
+      gap: 4rem;
+      &-bg {
+        &--img {
+          width: 100%;
+        }
+      }
+    }
+    &_title {
+      font-size: 3.6rem;
+      text-align: center;
+      &::after {
+        right: 6rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .lesson {
+    &_title {
+      font-size: 3.4rem;
+      &::after {
+        right: 3rem;
+      }
+    }
+    &_wrapper-bg {
+      display: none;
+    }
+    &_wrapper-content {
+      width: 100%;
+      &--text {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .lesson {
+    padding: 3.5rem 0rem;
+    &_title {
+      font-size: 2.4rem;
+      padding: 0rem 2rem 2rem 2rem;
+      &::after {
+        right: 0rem;
+      }
+    }
+    &_wrapper {
+      &-btn {
+        padding: 1.2rem 12rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .lesson {
+    &_title {
+      &::after {
+        width: 2.8rem;
+        right: 5rem;
+        top: -2rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .lesson {
+    &_title {
+      font-size: 2rem;
+      &::after {
+        right: 4rem;
+      }
+    }
+    &_wrapper {
+      &-btn {
+        padding: 1.2rem 7rem;
+      }
+    }
+  }
+}
