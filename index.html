@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./icons/logo.png" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
     <title>Hardcode Academy</title>
   </head>
@@ -606,48 +610,101 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <div class="reviews_wrapper">
-          <div class="reviews_wrapper-bg">
-            <img
-              class="reviews_wrapper-bg--img"
-              src="./img/reviews-img.png"
-              alt="#"
-            />
-          </div>
-          <div class="reviews_wrapper-content">
-            <h3 class="reviews_wrapper-content--title">
-              Отзывы наших учеников
-            </h3>
-            <div class="reviews_wrapper-content--wrapper">
-              <p class="reviews_wrapper-content--text">
-                Курс Frontend Developer был очень полезным и информативным. Я
-                получил фундаментальные знания о HTML, CSS и JavaScript, а также
-                научился использовать различные фреймворки и инструменты
-                разработки. Преподаватели были опытными и предлагали интересные
-                практические задания, что помогло мне применить полученные
-                знания на практике.
-              </p>
-              <div class="reviews_pages">
-                <p class="reviews_pages-title">Владислав</p>
-                <div class="reviews_pages-wrapper">
-                  <button class="reviews_pages-left">
-                    <img
-                      class="reviews_pages-left--img"
-                      src="./icons/btn-left.svg"
-                      alt="#"
-                    />
-                  </button>
-                  <span class="reviews_pages-number">1/4</span>
-                  <button class="reviews_pages-right">
-                    <img
-                      class="reviews_pages-right--img"
-                      src="./icons/btn-right.svg"
-                      alt="#"
-                    />
-                  </button>
+        <h3 class="reviews_slide-title">Отзывы наших учеников</h3>
+        <div class="swiper mySwiperReviews">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews_slide">
+                <div class="reviews_slide-content">
+                  <img
+                    class="reviews_slide-wrapper--img"
+                    src="./img/reviews-img1.png"
+                    alt="#"
+                  />
+                </div>
+                <div class="reviews_slide-wrapper">
+                  <p class="reviews_slide-wrapper--text">
+                    Курс Frontend Developer был очень полезным и информативным.
+                    Я получил фундаментальные знания о HTML, CSS и JavaScript, а
+                    также научился использовать различные фреймворки и
+                    инструменты разработки. Преподаватели были опытными и
+                    предлагали интересные практические задания, что помогло мне
+                    применить полученные знания на практике.
+                  </p>
+                  <p class="reviews_slide-wrapper--name">Владислав</p>
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="reviews_slide">
+                <div class="reviews_slide-content">
+                  <img
+                    class="reviews_slide-wrapper--img"
+                    src="./img/reviews-img2.png"
+                    alt="#"
+                  />
+                </div>
+                <div class="reviews_slide-wrapper">
+                  <p class="reviews_slide-wrapper--text">
+                    Я рекомендую курс Frontend Developer всем, кто хочет стать
+                    профессионалом в веб-разработке. Программа обучения была
+                    хорошо структурирована, и я смог/смогла освоить основы HTML,
+                    CSS и JavaScript за короткое время. Курсы позволили мне
+                    создать собственные проекты и портфолио, что помогло мне
+                    получить работу в сфере веб-разработки.
+                  </p>
+                  <p class="reviews_slide-wrapper--name">Алексей</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews_slide">
+                <div class="reviews_slide-content">
+                  <img
+                    class="reviews_slide-wrapper--img"
+                    src="./img/reviews-img3.png"
+                    alt="#"
+                  />
+                </div>
+                <div class="reviews_slide-wrapper">
+                  <p class="reviews_slide-wrapper--text">
+                    Этот курс по Frontend Development был отличным началом для
+                    меня. Я начинала с нулевых знаний, но благодаря ясным
+                    объяснениям и практическим упражнениям я смогла освоить не
+                    только основы программирования, но и создать собственные
+                    веб-приложения. Преподаватели были терпеливы и всегда готовы
+                    помочь.
+                  </p>
+                  <p class="reviews_slide-wrapper--name">Евгения</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews_slide">
+                <div class="reviews_slide-content">
+                  <img
+                    class="reviews_slide-wrapper--img"
+                    src="./img/reviews-img4.png"
+                    alt="#"
+                  />
+                </div>
+                <div class="reviews_slide-wrapper">
+                  <p class="reviews_slide-wrapper--text">
+                    Я прослушал курс Frontend Developer и остался очень доволен
+                    результатами. Курс предоставил мне все необходимые навыки и
+                    инструменты для разработки современных и отзывчивых
+                    веб-сайтов. Я получил практический опыт работы с различными
+                    фреймворками и научился управлять состоянием приложений.
+                  </p>
+                  <p class="reviews_slide-wrapper--name">Виктор</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews_control">
+            <div class="swiper-button-next" id="reviews_btn-next"></div>
+            <div class="swiper-pagination" id="reviews_pagination"></div>
+            <div class="swiper-button-prev" id="reviews_btn-prev"></div>
           </div>
         </div>
       </div>
@@ -794,5 +851,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiperfractional.js"></script>
   </body>
 </html>

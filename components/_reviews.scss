@@ -5,58 +5,79 @@
 
 .reviews {
   padding: 12.8rem 0rem;
-  &_wrapper {
+  &_control {
+    width: 17.6rem;
+    height: 5rem;
     display: flex;
-    &-bg {
-      width: calc(40%);
-      &--img {
-        display: block;
-        width: 100%;
-      }
-    }
-    &-content {
-      width: calc(60%);
-      &--title {
-        @include font_montserrat-heading--title;
-        text-align: right;
-        padding-bottom: 14rem;
-      }
-      &--wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 4.8rem;
-        align-items: flex-end;
-      }
-      &--text {
-        @include font_montserrat-paragraph;
-        line-height: 2.2rem;
-        max-width: 64.8rem;
-        text-align: left;
-        font-variant: small-caps;
-      }
-    }
+    flex-direction: row-reverse;
+    float: right;
   }
-  &_pages {
-    text-align: center;
-    &-title,
-    &-number {
+}
+.reviews_slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.5rem 0rem 2.5rem 0rem;
+  &-title {
+    @include font_montserrat-heading--title;
+    text-align: right;
+  }
+  &-content {
+    max-width: 36rem;
+  }
+  &-wrapper {
+    max-width: 60rem;
+    &--text {
+      padding-bottom: 4.8rem;
+      @include font_montserrat-paragraph;
+      line-height: 2.2rem;
+    }
+    &--name {
       @include font_montserrat-btn;
       font-size: 2.4rem;
+      font-variant: small-caps;
+      text-align: right;
     }
-    &-number {
+    &--img {
       display: block;
-    }
-    &-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 1.6rem;
-      padding-top: 2.4rem;
-    }
-    &-left,
-    &-right {
-      border: none;
-      background: transparent;
-      cursor: pointer;
+      width: 100%;
+      margin-left: 16rem;
     }
   }
+}
+.mySwiperReviews {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 44.8rem;
+    height: 44.8rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: $orange100;
+    top: 0;
+    left: 0;
+  }
+}
+#reviews_btn-next,
+#reviews_btn-prev,
+#reviews_pagination {
+  position: static !important;
+  padding-right: 1.4rem;
+  @include font_montserrat-btn;
+  font-size: 2.4rem;
+  line-height: normal;
+  font-variant: small-caps;
+}
+#reviews_btn-next {
+  &::after {
+    content: url("../../icons/btn-next.svg");
+  }
+  padding-top: 1.5rem;
+}
+#reviews_btn-prev {
+  &::after {
+    content: url("../../icons/btn-prev.svg");
+  }
+  padding-top: 1.5rem;
 }

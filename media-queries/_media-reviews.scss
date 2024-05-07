@@ -1,77 +1,108 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  #reviews_btn-next,
+  #reviews_btn-prev,
+  #reviews_pagination {
+    position: static !important;
+    padding-right: 1.5rem;
+    @include font_montserrat-btn;
+    font-size: 2.4rem;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+}
 @media (max-width: $breakpoint-xl) {
   .reviews {
-    &_wrapper {
-      padding: 0rem 2rem;
+    &_slide {
+      &-title {
+        padding-right: 3rem;
+      }
+      &-wrapper {
+        &--name {
+          padding-right: 3rem;
+        }
+      }
     }
+    &_control {
+      padding-right: 3rem;
+    }
+  }
+}
+.mySwiperReviews {
+  &::after {
+    left: 3rem;
   }
 }
 @media (max-width: $breakpoint-lg) {
   .reviews {
     padding: 7rem 0rem;
-    &_wrapper {
-      &-bg {
-        width: 50%;
+    &_slide {
+      &-wrapper {
+        width: 45rem;
       }
-      &-content {
-        width: 50%;
-        &--title {
-          font-size: 3.6rem;
-          padding-bottom: 8rem;
-        }
+      &-title {
+        font-size: 3.6rem;
       }
     }
   }
 }
 @media (max-width: $breakpoint-md) {
   .reviews {
-    &_wrapper {
-      gap: 2rem;
-      &-bg {
-        align-self: center;
+    &_slide {
+      flex-direction: column;
+      gap: 4rem;
+      &-title {
+        text-align: center;
       }
-      &-content {
-        &--title {
-          font-size: 3.4rem;
-          padding-bottom: 4rem;
+      &-wrapper {
+        &--img {
+          margin-left: 0rem;
+        }
+        &--name {
+          padding-right: 0rem;
+          text-align: center;
         }
       }
+    }
+    &_control {
+      float: none;
+      width: 450px;
+      margin: 0 auto;
+      padding-right: 0rem;
+    }
+  }
+  .mySwiperReviews {
+    &::after {
+      left: 5rem;
     }
   }
 }
 @media (max-width: $breakpoint-smL) {
   .reviews {
     padding: 3.5rem 0rem;
-    &_wrapper {
-      flex-direction: column;
-      align-items: center;
-      &-bg {
+    &_slide {
+      padding: 4rem;
+      &-title {
+        font-size: 2.4rem;
+        padding-right: 0;
+      }
+      &-wrapper {
         width: 100%;
       }
-      &-content {
-        width: 100%;
-        &--title {
-          font-size: 2.4rem;
-          padding-bottom: 2.4rem;
-        }
-        &--wrapper {
-          gap: 2.4rem;
-        }
-      }
+    }
+    &_control {
+      width: 70%;
+    }
+  }
+  .mySwiperReviews {
+    &::after {
+      display: none;
     }
   }
 }
+@media (max-width: $breakpoint-smM) {
+}
 @media (max-width: $breakpoint-smS) {
-  .reviews {
-    &_wrapper {
-      &-content {
-        &--title {
-          font-size: 2rem;
-          text-align: center;
-        }
-      }
-    }
-  }
 }
