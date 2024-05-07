@@ -196,7 +196,7 @@
 }
 .whyus_wrapper-card:hover {
   background-color: #f8ba3b;
-  transition: 1s ease;
+  transition: 0.5s ease-in-out;
   color: #fff;
 }
 .whyus_wrapper-card:hover .whyus_wrapper-card--img svg circle {
@@ -207,6 +207,9 @@
 }
 .whyus_wrapper-card:hover .whyus_wrapper-card--title {
   color: #fff;
+}
+.whyus_wrapper-card:not(:hover) {
+  transition: 0.5s ease-in-out;
 }
 .whyus_wrapper-card--img {
   width: 10rem;

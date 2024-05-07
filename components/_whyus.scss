@@ -29,7 +29,7 @@
       text-align: center;
       &:hover {
         background-color: $orange100;
-        transition: 1s ease;
+        transition: 0.5s ease-in-out;
         color: $white;
         .whyus_wrapper-card--img {
           svg {
@@ -44,6 +44,9 @@
         .whyus_wrapper-card--title {
           color: $white;
         }
+      }
+      &:not(:hover) {
+        transition: 0.5s ease-in-out;
       }
       &--img {
         width: 10rem;
