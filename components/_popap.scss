@@ -1,0 +1,59 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.popap {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 58rem;
+  height: 59.2rem;
+  border-radius: 3.2rem;
+  background: #fdeac4;
+  &_form {
+    &-btn {
+      float: right;
+      justify-content: right;
+      padding: 2.4rem 2.4rem 0rem 0rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    &-title {
+      clear: both;
+      @include font_montserrat-paragraph--title;
+      font-size: 3.6rem;
+    }
+    &-wrapper {
+      padding-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      &--text {
+        @include font_montserrat-btn;
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+      &--input {
+        @include font_montserrat-btn;
+        line-height: 2rem;
+        color: $gray;
+        outline: none;
+        background-color: #fff !important;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.4rem 0rem 1.4rem 1.6rem;
+        &::placeholder {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
