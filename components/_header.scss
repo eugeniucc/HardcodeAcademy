@@ -16,7 +16,6 @@
     right: 0;
     z-index: -1;
   }
-
   &_nav {
     display: flex;
     justify-content: space-between;
@@ -53,13 +52,9 @@
         align-items: center;
         gap: 0.8rem;
         padding: 1.6rem 3.2rem;
+        background: transparent;
         border-radius: 1.8rem;
         border: 0.1rem solid $black;
-        cursor: pointer;
-      }
-      &--language {
-        display: flex;
-        align-items: center;
         cursor: pointer;
       }
     }
