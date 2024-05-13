@@ -1,0 +1,55 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .popup {
+    &_form {
+      &-title {
+        font-size: 3.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .popup {
+    width: 35rem;
+    top: 5% !important;
+    &_form {
+      &-btn {
+        padding: 1.4rem 1.4rem 0rem 0rem;
+      }
+      &-title {
+        font-size: 2.4rem;
+      }
+      &-wrapper {
+        padding-top: 2rem;
+        gap: 1.4rem;
+        align-items: center;
+        &--btn {
+          width: 90%;
+        }
+      }
+      &-item {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smM) {
+  .popup {
+    width: 32rem;
+    &_form {
+      &-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smS) {
+  .popup {
+    width: 28rem;
+  }
+}

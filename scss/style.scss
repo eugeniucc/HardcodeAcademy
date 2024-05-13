@@ -8,7 +8,7 @@
 @import "../components/reviews";
 @import "../components/lesson";
 @import "../components/footer";
-@import "../components/popap";
+@import "../components/popup";
 
 // MEDIA QUERIES COMPONENTS
 
@@ -21,6 +21,7 @@
 @import "../media-queries/media-reviews";
 @import "../media-queries/media-teacher";
 @import "../media-queries/media-whyus";
+@import "../media-queries/media-popup";
 
 // MIXINS
 @import "../scss/mixins/mixins";

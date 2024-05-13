@@ -701,11 +701,11 @@
   margin: 0 auto;
 }
 
-.popap_show {
+.popup_show {
   display: block !important;
 }
 
-.popap {
+.popup {
   position: fixed;
   top: 15%;
   left: 50%;
@@ -717,7 +717,7 @@
   z-index: 2;
   display: none;
 }
-.popap_overlay {
+.popup_overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -729,7 +729,7 @@
   z-index: 1;
   display: none;
 }
-.popap_form-btn {
+.popup_form-btn {
   float: right;
   justify-content: right;
   padding: 2.4rem 2.4rem 0rem 0rem;
@@ -737,7 +737,7 @@
   border: none;
   cursor: pointer;
 }
-.popap_form-title {
+.popup_form-title {
   clear: both;
   color: #000000;
   text-align: center;
@@ -749,7 +749,7 @@
   text-transform: uppercase;
   font-size: 3.6rem;
 }
-.popap_form-wrapper {
+.popup_form-wrapper {
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -757,7 +757,7 @@
   max-width: 48rem;
   margin: 0 auto;
 }
-.popap_form-wrapper--btn {
+.popup_form-wrapper--btn {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
@@ -772,12 +772,12 @@
   padding: 1.2rem 0rem;
   cursor: pointer;
 }
-.popap_form-item {
+.popup_form-item {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
-.popap_form-item--text {
+.popup_form-item--text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
@@ -786,7 +786,7 @@
   font-size: 1.4rem;
   line-height: 2rem;
 }
-.popap_form-item--input {
+.popup_form-item--input {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
@@ -800,10 +800,10 @@
   border-radius: 1rem;
   padding: 1.4rem 0rem 1.4rem 1.6rem;
 }
-.popap_form-item--input::-moz-placeholder {
+.popup_form-item--input::-moz-placeholder {
   opacity: 0.7;
 }
-.popap_form-item--input::placeholder {
+.popup_form-item--input::placeholder {
   opacity: 0.7;
 }
 
@@ -1327,6 +1327,47 @@
 @media (max-width: 320px) {
   .whyus_title {
     font-size: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .popup_form-title {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 425px) {
+  .popup {
+    width: 35rem;
+    top: 5% !important;
+  }
+  .popup_form-btn {
+    padding: 1.4rem 1.4rem 0rem 0rem;
+  }
+  .popup_form-title {
+    font-size: 2.4rem;
+  }
+  .popup_form-wrapper {
+    padding-top: 2rem;
+    gap: 1.4rem;
+    align-items: center;
+  }
+  .popup_form-wrapper--btn {
+    width: 90%;
+  }
+  .popup_form-item {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .popup {
+    width: 32rem;
+  }
+  .popup_form-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .popup {
+    width: 28rem;
   }
 }
 html {

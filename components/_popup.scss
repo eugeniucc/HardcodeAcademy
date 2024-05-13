@@ -1,11 +1,11 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-.popap_show {
+.popup_show {
   display: block !important;
 }
 
-.popap {
+.popup {
   position: fixed;
   top: 15%;
   left: 50%;

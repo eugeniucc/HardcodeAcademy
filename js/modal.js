@@ -1,27 +1,27 @@
-const popapWindow = document.querySelector(".popap");
-const popapOverlay = document.querySelector(".popap_overlay");
-const popapButton = document.querySelector(".popap_form-btn");
+const popupWindow = document.querySelector(".popup");
+const popupOverlay = document.querySelector(".popup_overlay");
+const popupButton = document.querySelector(".popup_form-btn");
 
 function showModal() {
-  popapWindow.classList.add("popap_show");
-  popapOverlay.classList.add("popap_show");
+  popupWindow.classList.add("popup_show");
+  popupOverlay.classList.add("popup_show");
 }
 
 let timerId = setTimeout(showModal, 1000);
 
-popapButton.addEventListener("click", () => {
-  popapWindow.classList.remove("popap_show");
-  popapOverlay.classList.remove("popap_show");
+popupButton.addEventListener("click", () => {
+  popupWindow.classList.remove("popup_show");
+  popupOverlay.classList.remove("popup_show");
   clearTimeout(timerId);
 });
 
-popapOverlay.addEventListener("keydown", function (event) {
+popupOverlay.addEventListener("keydown", function (event) {
   if (
     event.key === "Escape" &&
-    popapWindow.classList.contains("popap_show") &&
-    popapOverlay.classList.contains("popap_show")
+    popupWindow.classList.contains("popup_show") &&
+    popupOverlay.classList.contains("popup_show")
   ) {
-    popapWindow.classList.remove("popap_show");
-    popapOverlay.classList.remove("popap_show");
+    popupWindow.classList.remove("popup_show");
+    popupOverlay.classList.remove("popup_show");
   }
 });
