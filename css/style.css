@@ -770,6 +770,7 @@
   border-radius: 3.2rem;
   background: #f96739;
   padding: 1.2rem 0rem;
+  cursor: pointer;
 }
 .popap_form-item {
   display: flex;
