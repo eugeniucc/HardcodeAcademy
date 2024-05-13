@@ -1,8 +1,8 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-.popap_hidden {
-  display: none;
+.popap_show {
+  display: block !important;
 }
 
 .popap {
@@ -15,6 +15,7 @@
   border-radius: 3.2rem;
   background: #fdeac4;
   z-index: 2;
+  display: none;
   &_overlay {
     position: fixed;
     top: 0;
@@ -24,6 +25,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(0.3rem);
     z-index: 1;
+    display: none;
   }
   &_form {
     &-btn {
