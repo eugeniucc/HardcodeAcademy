@@ -2,12 +2,18 @@ const popupWindow = document.querySelector(".popup");
 const popupOverlay = document.querySelector(".popup_overlay");
 const popupButton = document.querySelector(".popup_form-btn");
 
+const popupForm = document.querySelector(".popup_form");
+
+popupForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
+
 function showModal() {
   popupWindow.classList.add("popup_show");
   popupOverlay.classList.add("popup_show");
 }
 
-let timerId = setTimeout(showModal, 1000);
+let timerId = setTimeout(showModal, 15000);
 
 popupButton.addEventListener("click", () => {
   popupWindow.classList.remove("popup_show");
@@ -15,7 +21,8 @@ popupButton.addEventListener("click", () => {
   clearTimeout(timerId);
 });
 
-popupOverlay.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
+  console.log(event.key);
   if (
     event.key === "Escape" &&
     popupWindow.classList.contains("popup_show") &&

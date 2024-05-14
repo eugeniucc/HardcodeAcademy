@@ -299,6 +299,14 @@
   line-height: 2.4rem;
 }
 
+@keyframes accordion {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
 .accordion {
   padding-bottom: 12.8rem;
 }
@@ -320,7 +328,7 @@
 .accordion_wrapper-card {
   background-color: #fef8eb;
   border-radius: 3.2rem;
-  padding: 4rem 0rem 4.5rem 4rem;
+  padding: 4rem 0rem 1.5rem 4rem;
 }
 .accordion_wrapper-item--btn {
   display: flex;
@@ -351,6 +359,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.animateAccordion {
+  animation: accordion 1.2s;
 }
 
 .teacher {
@@ -701,10 +713,6 @@
   margin: 0 auto;
 }
 
-.popup_show {
-  display: block !important;
-}
-
 .popup {
   position: fixed;
   top: 15%;
@@ -805,6 +813,10 @@
 }
 .popup_form-item--input::placeholder {
   opacity: 0.7;
+}
+
+.popup_show {
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -1368,6 +1380,14 @@
 @media (max-width: 320px) {
   .popup {
     width: 28rem;
+  }
+}
+@keyframes accordion {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(10%);
   }
 }
 html {

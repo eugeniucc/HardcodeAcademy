@@ -1,8 +1,8 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/animations";
 
 // SECTION ACCORDION
-
 .accordion {
   padding-bottom: 12.8rem;
   &_title {
@@ -16,7 +16,7 @@
     &-card {
       background-color: $orange25;
       border-radius: 3.2rem;
-      padding: 4rem 0rem 4.5rem 4rem;
+      padding: 4rem 0rem 1.5rem 4rem;
     }
     &-item {
       &--btn {
@@ -40,4 +40,8 @@
       }
     }
   }
+}
+
+.animateAccordion {
+  animation: accordion 1.2s;
 }
