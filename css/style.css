@@ -299,25 +299,27 @@
   line-height: 2.4rem;
 }
 
-@keyframes animateAccordionList {
-  0% {
-    transform: translateY(-3rem);
-  }
+@keyframes accordionArrow {
   100% {
-    transform: translateY(0rem);
+    transform: rotate(0deg);
   }
 }
 @keyframes accordionBg {
   0% {
-    height: 0;
+    min-height: 0rem;
   }
   100% {
-    height: 100%;
+    min-height: 8rem;
   }
 }
-@keyframes accordionArrow {
+@keyframes animateAccordionList {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
   100% {
-    transform: rotate(-90deg);
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 .accordion {
@@ -362,8 +364,13 @@
   line-height: normal;
   text-transform: uppercase;
 }
+.accordion_wrapper-item--span {
+  transform: rotate(-90deg);
+}
 .accordion_wrapper-content {
   padding-left: 6.8rem;
+  overflow-y: hidden;
+  min-height: 0rem;
 }
 .accordion_wrapper-content--list {
   list-style: disc;
@@ -372,20 +379,27 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  display: none;
-}
-
-.animateAccordionList {
-  animation: accordionSlide 1s;
-  display: block;
-}
-
-.animateAccordionBg {
-  animation: accordionBg 1s;
+  overflow-y: hidden;
+  height: 0;
 }
 
 .animateAccordionRotate {
-  animation: accordionArrow 1s;
+  animation: accordionArrow 0.7s forwards;
+}
+
+.animateAccordionBg {
+  animation: accordionBg 1s forwards;
+  overflow-y: visible;
+}
+@media (max-width: 425px) {
+  .animateAccordionBg {
+    height: 15rem;
+  }
+}
+
+.animateAccordionList {
+  animation: animateAccordionList 1.5s forwards;
+  overflow-y: visible;
 }
 
 .teacher {
@@ -803,6 +817,14 @@
   padding: 1.2rem 0rem;
   cursor: pointer;
 }
+.popup_form-wrapper--btn:hover {
+  background: #f8ba3b;
+  transition: 0.4s;
+}
+.popup_form-wrapper--btn:not(:hover) {
+  background: #f96739;
+  transition: 0.4s;
+}
 .popup_form-item {
   display: flex;
   flex-direction: column;
@@ -840,6 +862,16 @@
 
 .popup_show {
   display: block;
+}
+
+.error {
+  border: 1px solid red;
+}
+.error::-moz-placeholder {
+  color: red;
+}
+.error::placeholder {
+  color: red;
 }
 
 @media (max-width: 1200px) {
@@ -1405,25 +1437,27 @@
     width: 28rem;
   }
 }
-@keyframes animateAccordionList {
-  0% {
-    transform: translateY(-3rem);
-  }
+@keyframes accordionArrow {
   100% {
-    transform: translateY(0rem);
+    transform: rotate(0deg);
   }
 }
 @keyframes accordionBg {
   0% {
-    height: 0;
+    min-height: 0rem;
   }
   100% {
-    height: 100%;
+    min-height: 8rem;
   }
 }
-@keyframes accordionArrow {
+@keyframes animateAccordionList {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
   100% {
-    transform: rotate(-90deg);
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 html {

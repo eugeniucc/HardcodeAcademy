@@ -1,18 +1,25 @@
 const accordionButton = document.querySelectorAll(
   ".accordion_wrapper-item--btn"
 );
-const accordionContent = document.querySelector(".accordion_wrapper-content");
+const accordionContent = document.querySelectorAll(
+  ".accordion_wrapper-content"
+);
 
-const accrodionList = document.querySelector(
+const accrodionList = document.querySelectorAll(
   ".accordion_wrapper-content--list"
 );
 
-const accordionArrow = document.querySelector(".accordion_wrapper-item--span");
+const accordionArrow = document.querySelectorAll(
+  ".accordion_wrapper-item--span"
+);
 
-accordionButton.forEach((element) => {
-  element.addEventListener("click", () => {
-    accordionArrow.classList.toggle("animateAccordionRotate");
-    accordionContent.classList.toggle("animateAccordionBg");
-    accrodionList.classList.toggle("animateAccordionList");
+accordionButton.forEach((element, index) => {
+  element.addEventListener("click", (event) => {
+    if (event.target === element || element.contains(event.target)) {
+      accordionArrow[index].classList.toggle("animateAccordionRotate");
+      accordionContent[index].classList.toggle("animateAccordionBg");
+      accrodionList[index].classList.toggle("animateAccordionList");
+      console.log(event.target);
+    }
   });
 });

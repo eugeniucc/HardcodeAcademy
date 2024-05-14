@@ -31,27 +31,35 @@
       &--title {
         @include font_montserrat-paragraph--title;
       }
+      &--span {
+        transform: rotate(-90deg);
+      }
     }
     &-content {
       padding-left: 6.8rem;
+      overflow-y: hidden;
+      min-height: 0rem;
       &--list {
         list-style: disc;
         @include font_montserrat-btn;
-        display: none;
+        overflow-y: hidden;
+        height: 0;
       }
     }
   }
 }
 
-.animateAccordionList {
-  animation: accordionSlide 1s;
-  display: block;
-}
-
-.animateAccordionBg {
-  animation: accordionBg 1s;
-}
-
 .animateAccordionRotate {
-  animation: accordionArrow 1s;
+  animation: accordionArrow 0.7s forwards;
+}
+.animateAccordionBg {
+  animation: accordionBg 1s forwards;
+  overflow-y: visible;
+  @media (max-width: 425px) {
+    height: 15rem;
+  }
+}
+.animateAccordionList {
+  animation: animateAccordionList 1.5s forwards;
+  overflow-y: visible;
 }
