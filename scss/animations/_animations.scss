@@ -1,8 +1,24 @@
-@keyframes accordion {
+@keyframes animateAccordionList {
   0% {
     transform: translateY(-3rem);
   }
   100% {
     transform: translateY(0rem);
+  }
+}
+@keyframes accordionBg {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes accordionArrow {
+  0% {
+  }
+  100% {
+    transform: rotate(-90deg);
   }
 }

@@ -43,7 +43,15 @@
   }
 }
 
-.animateAccordion {
-  animation: accordion 1s;
+.animateAccordionList {
+  animation: accordionSlide 1s;
   display: block;
+}
+
+.animateAccordionBg {
+  animation: accordionBg 1s;
+}
+
+.animateAccordionRotate {
+  animation: accordionArrow 1s;
 }

@@ -7,14 +7,12 @@ const accrodionList = document.querySelector(
   ".accordion_wrapper-content--list"
 );
 
+const accordionArrow = document.querySelector(".accordion_wrapper-item--span");
+
 accordionButton.forEach((element) => {
   element.addEventListener("click", () => {
-    accordionContent.classList.toggle("animateAccordion");
-    accrodionList.classList.toggle("animateAccordion");
-  });
-  element.addEventListener("click", () => {
-    accordionContent.classList.toggle("animateAccordion");
+    accordionArrow.classList.toggle("animateAccordionRotate");
+    accordionContent.classList.toggle("animateAccordionBg");
+    accrodionList.classList.toggle("animateAccordionList");
   });
 });
-
-console.log(accordionButton);
