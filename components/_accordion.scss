@@ -37,11 +37,13 @@
       &--list {
         list-style: disc;
         @include font_montserrat-btn;
+        display: none;
       }
     }
   }
 }
 
 .animateAccordion {
-  animation: accordion 1.2s;
+  animation: accordion 1s;
+  display: block;
 }
