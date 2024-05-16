@@ -53,7 +53,7 @@ function showModal() {
   popupOverlay.classList.add("popup_show");
 }
 
-let timerId = setTimeout(showModal, 15000);
+let timerId = setTimeout(showModal, 1000);
 
 popupButton.addEventListener("click", () => {
   popupWindow.classList.remove("popup_show");
@@ -62,7 +62,6 @@ popupButton.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", function (event) {
-  console.log(event.key);
   if (
     event.key === "Escape" &&
     popupWindow.classList.contains("popup_show") &&
@@ -71,4 +70,9 @@ document.addEventListener("keydown", function (event) {
     popupWindow.classList.remove("popup_show");
     popupOverlay.classList.remove("popup_show");
   }
+});
+
+popupOverlay.addEventListener("click", () => {
+  popupWindow.classList.remove("popup_show");
+  popupOverlay.classList.remove("popup_show");
 });
