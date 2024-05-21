@@ -46,6 +46,18 @@
     }
   }
 }
+@media (max-width: 390px) {
+  .header {
+    &_nav {
+      &-menu {
+        width: 100%;
+        &--urls {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
 @media (max-width: $breakpoint-smM) {
   .header {
     &_nav {

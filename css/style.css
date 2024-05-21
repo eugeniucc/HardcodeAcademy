@@ -30,7 +30,6 @@
 .header_nav-menu--logo {
   width: 6.4rem;
   height: 6.4rem;
-  background-image: url(../../icons/logo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -909,6 +908,14 @@
     justify-content: center;
   }
 }
+@media (max-width: 390px) {
+  .header_nav-menu {
+    width: 100%;
+  }
+  .header_nav-menu--urls {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 375px) {
   .header_nav-menu {
     width: 100%;
@@ -969,6 +976,7 @@
   }
   .accordion_wrapper-item--title {
     text-align: left;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 320px) {
@@ -1127,10 +1135,19 @@
     font-size: 2.4rem;
   }
   .forwho_content-title::after {
-    right: 1.5rem;
+    right: 2.5rem;
+    top: -2rem;
+    width: 3.4rem;
   }
   .forwho_content-wrapper--title {
     font-size: 2rem;
+  }
+}
+@media (max-width: 390px) {
+  .forwho_content-title::after {
+    right: -0.5rem;
+    top: -1.5rem;
+    width: 3rem;
   }
 }
 @media (max-width: 375px) {
@@ -1195,16 +1212,35 @@
     padding: 0rem 2rem 2rem 2rem;
   }
   .lesson_title::after {
-    right: 0rem;
+    right: 1rem;
+    top: -2rem;
+    width: 3.4rem;
   }
   .lesson_wrapper-btn {
     padding: 1.2rem 12rem;
   }
 }
+@media (max-width: 390px) {
+  .lesson_title {
+    font-size: 1.8em;
+  }
+  .lesson_title::after {
+    top: -2rem;
+    width: 3rem;
+  }
+}
+@media (max-width: 360px) {
+  .lesson_title {
+    font-size: 1.8em;
+  }
+  .lesson_title::after {
+    right: 0rem;
+  }
+}
 @media (max-width: 375px) {
   .lesson_title::after {
     width: 2.8rem;
-    right: 5rem;
+    right: 1rem;
     top: -2rem;
   }
 }
@@ -1403,6 +1439,7 @@
   .popup {
     width: 35rem;
     top: 5% !important;
+    height: 45rem;
   }
   .popup_form-btn {
     padding: 1.4rem 1.4rem 0rem 0rem;
@@ -1433,6 +1470,9 @@
 @media (max-width: 320px) {
   .popup {
     width: 28rem;
+  }
+  .popup_form-item--input {
+    font-size: 1.4rem;
   }
 }
 @keyframes accordionArrow {

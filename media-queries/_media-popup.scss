@@ -15,6 +15,7 @@
   .popup {
     width: 35rem;
     top: 5% !important;
+    height: 45rem;
     &_form {
       &-btn {
         padding: 1.4rem 1.4rem 0rem 0rem;
@@ -51,5 +52,12 @@
 @media (max-width: $breakpoint-smS) {
   .popup {
     width: 28rem;
+    &_form {
+      &-item {
+        &--input {
+          font-size: 1.4rem;
+        }
+      }
+    }
   }
 }
