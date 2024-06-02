@@ -1,5 +1,6 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 .popup {
   position: fixed;
@@ -53,14 +54,7 @@
         background: $brick;
         padding: 1.2rem 0rem;
         cursor: pointer;
-        &:hover {
-          background: $orange100;
-          transition: 0.4s;
-        }
-        &:not(:hover) {
-          background: $brick;
-          transition: 0.4s;
-        }
+        @include btnhover;
       }
     }
     &-item {

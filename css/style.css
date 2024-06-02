@@ -475,6 +475,17 @@
   flex-direction: row-reverse;
   float: right;
 }
+.reviews_btn-next::after svg:hover {
+  background: #f8ba3b;
+  transition: 0.4s;
+}
+.reviews_btn-next::after svg:not(:hover) {
+  background: #f96739;
+  transition: 0.4s;
+}
+.reviews_btn-next:hover::after {
+  background-color: red; /* Desired background color on hover */
+}
 
 .reviews_slide {
   display: flex;
@@ -667,6 +678,14 @@
   padding: 1.2rem 15rem;
   text-wrap: nowrap;
   cursor: pointer;
+}
+.lesson_wrapper-btn:hover {
+  background: #f8ba3b;
+  transition: 0.4s;
+}
+.lesson_wrapper-btn:not(:hover) {
+  background: #f96739;
+  transition: 0.4s;
 }
 .lesson_wrapper-bg--img {
   display: block;

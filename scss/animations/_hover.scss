@@ -1,0 +1,10 @@
+@mixin btnhover {
+  &:hover {
+    background: $orange100;
+    transition: 0.4s;
+  }
+  &:not(:hover) {
+    background: $brick;
+    transition: 0.4s;
+  }
+}

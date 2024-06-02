@@ -1,8 +1,8 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 // SECTION LESSON
-
 .lesson {
   background-color: $orange25;
   padding: 6.4rem 0rem;
@@ -71,6 +71,7 @@
       padding: 1.2rem 15rem;
       text-wrap: nowrap;
       cursor: pointer;
+      @include btnhover;
     }
     &-bg {
       &--img {

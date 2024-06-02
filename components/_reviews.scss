@@ -1,5 +1,6 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 // SECTION REVIEWS
 
@@ -11,6 +12,16 @@
     display: flex;
     flex-direction: row-reverse;
     float: right;
+  }
+  &_btn {
+    &-next {
+      &::after svg {
+        @include btnhover;
+      }
+      &:hover::after {
+        background-color: red; /* Desired background color on hover */
+      }
+    }
   }
 }
 .reviews_slide {
