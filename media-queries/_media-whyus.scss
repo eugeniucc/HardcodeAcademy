@@ -1,6 +1,12 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  .whyus {
+    padding: 10rem 1.4rem 6.4rem 1.4rem;
+  }
+}
+
 @media (max-width: $breakpoint-xl) {
   .whyus {
     &_wrapper {

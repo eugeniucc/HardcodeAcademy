@@ -890,6 +890,11 @@
   color: red;
 }
 
+@media (max-width: 1400px) {
+  .header {
+    padding: 3.2rem 1.4rem 10rem 1.4rem;
+  }
+}
 @media (max-width: 1200px) {
   .header_nav {
     padding: 0rem 2rem;
@@ -952,6 +957,11 @@
     padding: 1.5rem 1.5rem;
   }
 }
+@media (max-width: 1400px) {
+  .accordion {
+    padding: 0rem 1.4rem 12rem 1.4rem;
+  }
+}
 @media (max-width: 1200px) {
   .accordion_title {
     padding-left: 2rem;
@@ -1008,6 +1018,11 @@
   .accordion_wrapper-item--title {
     font-size: 1.8rem;
     padding-right: 1.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .course {
+    padding: 3.2rem 1.4rem 14rem 1.4rem;
   }
 }
 @media (max-width: 1200px) {
@@ -1074,12 +1089,12 @@
     height: 30rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .footer_wrapper {
-    padding: 0rem 2rem;
+    padding: 0rem 1.4rem;
   }
   .footer_copyrights {
-    padding-left: 2rem;
+    padding-left: 1.4rem;
   }
 }
 @media (max-width: 425px) {
@@ -1104,9 +1119,15 @@
   }
 }
 @media (max-width: 1400px) {
+  .forwho {
+    padding: 8.5rem 1.4rem 15rem 1.4rem;
+  }
+  .forwho_content-title {
+    max-width: 60rem;
+  }
   .forwho_content-title::after {
     top: -2rem;
-    right: -3.5rem;
+    right: 8.5rem;
   }
 }
 @media (max-width: 1200px) {
@@ -1184,9 +1205,9 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .lesson_wrapper {
-    padding: 0rem 2rem;
+    padding: 6.4rem 1.4rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1288,6 +1309,9 @@
     font-size: 2.4rem;
     line-height: normal;
     font-variant: small-caps;
+  }
+  .reviews {
+    padding: 12.8rem 1.4rem;
   }
 }
 @media (max-width: 1200px) {
@@ -1391,6 +1415,11 @@
   }
   .teacher_wrapper-card {
     width: 70%;
+  }
+}
+@media (max-width: 1400px) {
+  .whyus {
+    padding: 10rem 1.4rem 6.4rem 1.4rem;
   }
 }
 @media (max-width: 1200px) {

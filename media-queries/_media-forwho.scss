@@ -3,11 +3,13 @@
 
 @media (max-width: $breakpoint-xxl) {
   .forwho {
+    padding: 8.5rem 1.4rem 15rem 1.4rem;
     &_content {
       &-title {
+        max-width: 60rem;
         &::after {
           top: -2rem;
-          right: -3.5rem;
+          right: 8.5rem;
         }
       }
     }
