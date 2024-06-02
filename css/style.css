@@ -1229,19 +1229,19 @@
     width: 3rem;
   }
 }
+@media (max-width: 375px) {
+  .lesson_title::after {
+    width: 2.8rem;
+    right: 1rem;
+    top: -2rem;
+  }
+}
 @media (max-width: 360px) {
   .lesson_title {
     font-size: 1.8em;
   }
   .lesson_title::after {
     right: 0rem;
-  }
-}
-@media (max-width: 375px) {
-  .lesson_title::after {
-    width: 2.8rem;
-    right: 1rem;
-    top: -2rem;
   }
 }
 @media (max-width: 320px) {

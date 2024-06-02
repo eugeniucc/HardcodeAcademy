@@ -77,16 +77,6 @@
     }
   }
 }
-@media (max-width: 360px) {
-  .lesson {
-    &_title {
-      font-size: 1.8em;
-      &::after {
-        right: 0rem;
-      }
-    }
-  }
-}
 @media (max-width: $breakpoint-smM) {
   .lesson {
     &_title {
@@ -94,6 +84,16 @@
         width: 2.8rem;
         right: 1rem;
         top: -2rem;
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .lesson {
+    &_title {
+      font-size: 1.8em;
+      &::after {
+        right: 0rem;
       }
     }
   }
