@@ -29,6 +29,31 @@
     }
   }
 }
+@media (max-width: 990px) {
+  .course {
+    &_subscribe {
+      &-title {
+        font-size: 5.4rem;
+        &--span {
+          font-size: 4.6rem;
+          max-width: 14rem;
+        }
+      }
+    }
+    &_wrapper {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 840px) {
+  .course {
+    padding-bottom: 0rem;
+    &_bg {
+      width: 90%;
+      height: 60rem;
+    }
+  }
+}
 @media (max-width: $breakpoint-md) {
   .course {
     &_wrapper {
@@ -61,8 +86,26 @@
     }
   }
 }
+@media (max-width: 620px) {
+  .course {
+    &_bg {
+      height: 40rem;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .course {
+    &_bg {
+      height: 40rem;
+    }
+  }
+}
 @media (max-width: 580px) {
   .course {
+    &_bg {
+      padding-top: 5rem;
+      width: 100%;
+    }
     &_subscribe {
       &-content {
         &--wrapper {
@@ -75,6 +118,10 @@
 }
 @media (max-width: 480px) {
   .course {
+    &_bg {
+      padding-top: 0rem;
+    }
+
     &_subscribe {
       &-title {
         gap: 2rem;
@@ -89,7 +136,7 @@
     &_subscribe {
       &-title {
         flex-direction: column;
-        align-content: center;
+        align-items: unset;
         gap: 0rem;
         &--span {
           max-width: 14rem;

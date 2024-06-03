@@ -55,8 +55,15 @@
 .animateAccordionBg {
   animation: accordionBg 1s forwards;
   overflow-y: visible;
+
+  @media (max-width: 625px) {
+    height: 10rem;
+  }
   @media (max-width: 425px) {
-    height: 15rem;
+    height: 20rem;
+  }
+  @media (max-width: 320px) {
+    height: 25rem;
   }
 }
 .animateAccordionList {

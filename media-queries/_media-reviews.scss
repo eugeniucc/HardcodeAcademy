@@ -154,6 +154,20 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .reviews_control {
+    width: 90%;
+  }
+  .reviews {
+    &_slide {
+      &-wrapper {
+        &--text {
+          padding: 2rem 2rem;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: $breakpoint-smL) {
   .reviews {

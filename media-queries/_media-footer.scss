@@ -11,12 +11,24 @@
     }
   }
 }
-@media (max-width: $breakpoint-smL) {
+@media (max-width: $breakpoint-md) {
   .footer {
     padding: 3.5rem 0rem;
     &_wrapper {
       flex-direction: column;
       gap: 2.4rem;
+      &-card {
+        display: flex;
+        gap: 3rem;
+        max-width: 100%;
+        &--img {
+          width: 5.6rem;
+          height: 3.6rem;
+        }
+      }
+      &-contacts {
+        flex-direction: unset;
+      }
     }
     &_copyrights {
       padding-top: 3.4rem;
@@ -26,8 +38,21 @@
     }
   }
 }
-@media (max-width: $breakpoint-smS) {
+@media (max-width: 490px) {
   .footer {
+    &_wrapper {
+      flex-direction: column;
+      gap: 2.4rem;
+      &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        max-width: 90%;
+      }
+      &-contacts {
+        flex-direction: column;
+      }
+    }
     &_copyrights {
       flex-direction: column;
       gap: 2.4rem;
