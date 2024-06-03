@@ -45,11 +45,24 @@
     }
   }
 }
-@media (max-width: $breakpoint-md) {
+@media (max-width: 990px) {
   .forwho {
     &_wrapper {
       flex-direction: column;
+      gap: 7rem;
     }
+    &_content {
+      width: 90%;
+      &-title {
+        &::after {
+          right: 8.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .forwho {
     &_content {
       width: 100%;
       &-title {

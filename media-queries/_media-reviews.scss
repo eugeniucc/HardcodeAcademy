@@ -38,6 +38,39 @@
     left: 3rem;
   }
 }
+@media (max-width: 1160px) {
+  .reviews_slide-title {
+    padding-right: 0;
+    padding-bottom: 2.4rem;
+    text-align: center;
+  }
+  .reviews {
+    &_slide {
+      &-wrapper {
+        &--img {
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+  .mySwiperReviews {
+    &::after {
+      top: 1%;
+      left: 29%;
+    }
+  }
+  .reviews_control {
+    padding-right: 23%;
+  }
+}
+@media (max-width: 1160px) {
+  .reviews {
+    &_slide {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+}
 @media (max-width: $breakpoint-lg) {
   .reviews {
     padding: 7rem 0rem;
@@ -50,12 +83,13 @@
       }
     }
   }
+  .reviews_control {
+    padding-right: 27%;
+  }
 }
-@media (max-width: $breakpoint-md) {
+@media (max-width: 940px) {
   .reviews {
     &_slide {
-      flex-direction: column;
-      gap: 4rem;
       &-title {
         text-align: center;
       }
@@ -78,10 +112,49 @@
   }
   .mySwiperReviews {
     &::after {
-      left: 5rem;
+      top: 1%;
+      left: 25%;
     }
   }
 }
+@media (max-width: 850px) {
+  .mySwiperReviews {
+    &::after {
+      left: 22%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .mySwiperReviews {
+    &::after {
+      top: 1%;
+      left: 20%;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .mySwiperReviews {
+    &::after {
+      left: 16%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .mySwiperReviews {
+    &::after {
+      left: 12%;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .mySwiperReviews {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: $breakpoint-smL) {
   .reviews {
     padding: 3.5rem 0rem;
@@ -99,13 +172,4 @@
       width: 70%;
     }
   }
-  .mySwiperReviews {
-    &::after {
-      display: none;
-    }
-  }
-}
-@media (max-width: $breakpoint-smM) {
-}
-@media (max-width: $breakpoint-smS) {
 }

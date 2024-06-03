@@ -13,16 +13,6 @@
     flex-direction: row-reverse;
     float: right;
   }
-  &_btn {
-    &-next {
-      &::after svg {
-        @include btnhover;
-      }
-      &:hover::after {
-        background-color: red; /* Desired background color on hover */
-      }
-    }
-  }
 }
 .reviews_slide {
   display: flex;

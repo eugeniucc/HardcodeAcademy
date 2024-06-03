@@ -475,17 +475,6 @@
   flex-direction: row-reverse;
   float: right;
 }
-.reviews_btn-next::after svg:hover {
-  background: #f8ba3b;
-  transition: 0.4s;
-}
-.reviews_btn-next::after svg:not(:hover) {
-  background: #f96739;
-  transition: 0.4s;
-}
-.reviews_btn-next:hover::after {
-  background-color: red; /* Desired background color on hover */
-}
 
 .reviews_slide {
   display: flex;
@@ -895,6 +884,11 @@
     padding: 3.2rem 1.4rem 10rem 1.4rem;
   }
 }
+@media (max-width: 1100px) {
+  .header_nav-menu {
+    width: 70rem;
+  }
+}
 @media (max-width: 1200px) {
   .header_nav {
     padding: 0rem 2rem;
@@ -911,7 +905,20 @@
     width: 62.8rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .header_nav-menu {
+    width: 58rem;
+  }
+}
+@media (max-width: 860px) {
+  .header_nav-menu {
+    width: 52rem;
+  }
+  .header_nav-menu--urls {
+    gap: 1.4rem;
+  }
+}
+@media (max-width: 796px) {
   .header_nav-menu {
     width: 41rem;
   }
@@ -922,7 +929,7 @@
     gap: 1.4rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 690px) {
   .header_nav {
     flex-direction: column;
     gap: 2.4rem;
@@ -932,12 +939,20 @@
     justify-content: center;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 440px) {
+  .header_nav {
+    padding: 0rem 1.4rem;
+    align-items: flex-start;
+  }
   .header_nav-menu {
-    width: 100%;
+    width: 90%;
   }
   .header_nav-menu--urls {
+    gap: 2.4rem;
     flex-wrap: wrap;
+  }
+  .header_nav-contacts {
+    justify-content: flex-start;
   }
 }
 @media (max-width: 375px) {
@@ -946,7 +961,7 @@
   }
   .header_nav-menu--urls {
     flex-wrap: wrap;
-    gap: 3.4rem;
+    gap: 2rem;
   }
   .header_nav-contacts {
     justify-content: unset;
@@ -1035,6 +1050,14 @@
     padding-bottom: 7rem;
   }
 }
+@media (max-width: 990px) {
+  .course_subscribe {
+    width: 100%;
+  }
+  .course_wrapper {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .course_wrapper {
     flex-direction: column;
@@ -1054,11 +1077,25 @@
   }
   .course_subscribe-title {
     display: flex;
+    align-items: center;
     gap: 4rem;
     font-size: 4.4rem;
   }
   .course_subscribe-title--span {
     font-size: 4.6rem;
+    max-height: 6.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .course_subscribe-content--wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .course_subscribe-title {
+    gap: 2rem;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 425px) {
@@ -1075,9 +1112,6 @@
   }
   .course_subscribe-content--wrapper {
     gap: 2rem;
-  }
-  .course_subscribe-btn {
-    padding: 1rem 2rem;
   }
   .course_bg {
     width: 100%;
@@ -1152,10 +1186,19 @@
     right: -1.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .forwho_wrapper {
     flex-direction: column;
+    gap: 7rem;
   }
+  .forwho_content {
+    width: 90%;
+  }
+  .forwho_content-title::after {
+    right: 8.5rem;
+  }
+}
+@media (max-width: 768px) {
   .forwho_content {
     width: 100%;
   }
@@ -1329,6 +1372,29 @@
   left: 3rem;
 }
 
+@media (max-width: 1160px) {
+  .reviews_slide-title {
+    padding-right: 0;
+    padding-bottom: 2.4rem;
+    text-align: center;
+  }
+  .reviews_slide-wrapper--img {
+    margin-left: 0rem;
+  }
+  .mySwiperReviews::after {
+    top: 1%;
+    left: 29%;
+  }
+  .reviews_control {
+    padding-right: 23%;
+  }
+}
+@media (max-width: 1160px) {
+  .reviews_slide {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
 @media (max-width: 1024px) {
   .reviews {
     padding: 7rem 0rem;
@@ -1339,12 +1405,11 @@
   .reviews_slide-title {
     font-size: 3.6rem;
   }
-}
-@media (max-width: 768px) {
-  .reviews_slide {
-    flex-direction: column;
-    gap: 4rem;
+  .reviews_control {
+    padding-right: 27%;
   }
+}
+@media (max-width: 940px) {
   .reviews_slide-title {
     text-align: center;
   }
@@ -1362,7 +1427,34 @@
     padding-right: 0rem;
   }
   .mySwiperReviews::after {
-    left: 5rem;
+    top: 1%;
+    left: 25%;
+  }
+}
+@media (max-width: 850px) {
+  .mySwiperReviews::after {
+    left: 22%;
+  }
+}
+@media (max-width: 768px) {
+  .mySwiperReviews::after {
+    top: 1%;
+    left: 20%;
+  }
+}
+@media (max-width: 720px) {
+  .mySwiperReviews::after {
+    left: 16%;
+  }
+}
+@media (max-width: 600px) {
+  .mySwiperReviews::after {
+    left: 12%;
+  }
+}
+@media (max-width: 550px) {
+  .mySwiperReviews::after {
+    display: none;
   }
 }
 @media (max-width: 425px) {
@@ -1381,9 +1473,6 @@
   }
   .reviews_control {
     width: 70%;
-  }
-  .mySwiperReviews::after {
-    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -1422,12 +1511,21 @@
     padding: 10rem 1.4rem 6.4rem 1.4rem;
   }
 }
+@media (max-width: 1350px) {
+  .whyus_wrapper-card--title {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 1200px) {
   .whyus_wrapper {
-    padding: 0rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.4rem;
+    padding: 0rem 1.4rem;
   }
   .whyus_wrapper-card {
-    padding: 3rem 3rem;
+    width: 70%;
+    padding: 5rem 3rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1445,11 +1543,8 @@
   .whyus_title {
     font-size: 3.4rem;
   }
-  .whyus_wrapper {
-    gap: 1.4rem;
-  }
   .whyus_wrapper-card {
-    padding: 1.2rem 1.2rem;
+    padding: 5rem 2rem;
   }
   .whyus_wrapper-card--title {
     font-size: 1.5rem;
