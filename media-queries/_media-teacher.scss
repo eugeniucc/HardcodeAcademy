@@ -19,6 +19,15 @@
     }
   }
 }
+@media (max-width: 460px) {
+  .teacher {
+    &_wrapper {
+      &-card {
+        padding: 3.2rem 2.4rem;
+      }
+    }
+  }
+}
 @media (max-width: $breakpoint-smL) {
   .teacher {
     padding-bottom: 3.5rem;
@@ -36,4 +45,3 @@
     }
   }
 }
-

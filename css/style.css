@@ -391,15 +391,10 @@
 }
 @media (max-width: 625px) {
   .animateAccordionBg {
-    height: 10rem;
+    height: 18rem;
   }
 }
-@media (max-width: 425px) {
-  .animateAccordionBg {
-    height: 20rem;
-  }
-}
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .animateAccordionBg {
     height: 25rem;
   }
@@ -1669,6 +1664,11 @@
 @media (max-width: 768px) {
   .teacher_title {
     font-size: 3.4rem;
+  }
+}
+@media (max-width: 460px) {
+  .teacher_wrapper-card {
+    padding: 3.2rem 2.4rem;
   }
 }
 @media (max-width: 425px) {
