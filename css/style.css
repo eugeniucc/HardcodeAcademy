@@ -69,6 +69,33 @@
   cursor: pointer;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  height: 5rem;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .marquee-container {
+    margin-bottom: 5rem;
+  }
+}
+
+.marquee-container div {
+  display: flex;
+  gap: 3rem;
+}
+
+.slick-slide {
+  white-space: nowrap;
+}
+
 .course {
   position: relative;
   padding-bottom: 10rem;

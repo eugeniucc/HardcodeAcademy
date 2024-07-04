@@ -59,3 +59,19 @@
     }
   }
 }
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  height: 5rem;
+  @include font_montserrat-heading--title;
+  @media (max-width: $breakpoint-smL) {
+    margin-bottom: 5rem;
+  }
+}
+.marquee-container div {
+  display: flex;
+  gap: 3rem;
+}
+.slick-slide {
+  white-space: nowrap;
+}
